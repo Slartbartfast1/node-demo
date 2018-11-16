@@ -7,7 +7,10 @@
 
     if (hasDefine) {
         // AMD Module or CMD Module
-        define('eventproxy_debug', function () {return function () {};});
+        define('eventproxy_debug', function () {
+            return function () {
+            };
+        });
         define(['eventproxy_debug'], definition);
     } else if (hasExports) {
         // Node.js Module
@@ -17,7 +20,8 @@
         this[name] = definition();
     }
 })('EventProxy', function (debug) {
-    debug = debug || function () {};
+    debug = debug || function () {
+    };
 
     /*!
      * refs
