@@ -26,11 +26,10 @@
     var MyStream = new Stream();
 
     MyStream.on("write", function (file) {
-        console.log(`${file} is writed`);
+        console.log(`${file} has been writed`);
     });
     MyStream.write("file2");
 }
-
 
 
 
