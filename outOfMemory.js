@@ -22,4 +22,3 @@ for (var j = 0; j < 15; j++) {
 }
 
 showMem();
-
