@@ -1,3 +1,6 @@
+/**
+ * 避免队列过长引起内存泄漏的简单方法
+ * */
 class limitTableMap {
     constructor(limit) {
         this.limit = limit || 100;
